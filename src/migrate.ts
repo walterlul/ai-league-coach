@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { pool } from "./db";
+import { pool } from "./db.js";
 
 async function main() {
   const sql = readFileSync("db/schema.sql", "utf8");
